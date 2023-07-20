@@ -7,7 +7,7 @@
 import googlemaps
 from datetime import datetime, timedelta
 
-gmaps = googlemaps.Client(key='AIzaSyCYjSicJwcb6z9oSdohtoiAHvfA4po847w')
+gmaps = googlemaps.Client(key=<ADD-API-KEY>)
 
 
 # In[2]:
