@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign Up</title>
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <p><%= message %></p>
+  <form action="/signup" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="Type">Choose if commuter/cab :</label>
+    <select id="type" name="type">
+      <option value="commuter">Commuter</option>
+      <option value="cab">Cab</option>
+    </select><br><br>
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+    <small>HINT: on google maps , right click on red marker and copy the lattitude and longitude</small><br><br>
+    <input type="submit" value="Sign Up">
+  </form>
+  <p>Already have an account? <a href="/login">Login</a></p>
+</body>
+</html>
